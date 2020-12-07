@@ -71,7 +71,7 @@ SENSORS = {
     ("emeter", "powerFactor"): BlockAttributeDescription(
         name="Power Factor",
         unit=PERCENTAGE,
-        value=lambda value: round(value * 100, 1),
+        value=lambda value: round(value, 2),
         device_class=sensor.DEVICE_CLASS_POWER_FACTOR,
     ),
     ("relay", "power"): BlockAttributeDescription(
